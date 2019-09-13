@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="CreateIT">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="assets/js/modernizr.custom.js"></script>
+	<script src="assets/js/device.min.js"></script>
+	<title id="pageTitle"></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/grass.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/pink.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/hover-min.css">
+
+	<script type="text/javascript">
+		var doc = document;
+		var docEl = document.documentElement;
+
+		toggleFullScreen();
+		/****  Full Screen Toggle  ****/
+		function toggleFullScreen() {
+			var x = document.getElementsByTagName("html")[0];
+
+			if (!doc.fullscreenElement && !doc.msFullscreenElement && !doc.webkitIsFullScreen && !doc.mozFullScreenElement) {
+				x.style = "overflow-y:hidden";
+				if (docEl.requestFullscreen) {
+					docEl.requestFullscreen();
+				} else if (docEl.webkitRequestFullScreen) {
+					docEl.webkitRequestFullscreen();
+				} else if (docEl.webkitRequestFullScreen) {
+					docEl.webkitRequestFullScreen();
+				} else if (docEl.msRequestFullscreen) {
+					docEl.msRequestFullscreen();
+				} else if (docEl.mozRequestFullScreen) {
+					docEl.mozRequestFullScreen();
+				}
+			} else {
+				x.style = "overflow-y:auto";
+				if (doc.exitFullscreen) {
+					doc.exitFullscreen();
+				} else if (doc.webkitExitFullscreen) {
+					doc.webkitExitFullscreen();
+				} else if (doc.webkitCancelFullScreen) {
+					doc.webkitCancelFullScreen();
+				} else if (doc.msExitFullscreen) {
+					doc.msExitFullscreen();
+				} else if (doc.mozCancelFullScreen) {
+					doc.mozCancelFullScreen();
+				}
+			}
+		}
+	</script>
+	<link href="assets/css/rtl.css" rel="stylesheet" />
+</head>
+
+<body class="withAnimation">
+	<div class="parallax-viewport" id="parallax">
+		<div class="parallax-layer cloud1">
+			<img src="assets/images/cloud3.png" alt="">
+		</div>
+		<div class="parallax-layer cloud2">
+			<img src="assets/images/cloud2.png" alt="">
+		</div>
+		<div class="parallax-layer cloud3">
+			<img src="assets/images/cloud2.png" alt="">
+		</div>
+		<div class="parallax-layer cloud4">
+			<img src="assets/images/cloud1.png" alt="">
+		</div>
+		<div class="parallax-layer cloud5">
+			<img src="assets/images/cloud1.png" alt="">
+		</div>
+		<div class="parallax-layer cloud6">
+			<img src="assets/images/cloud1.png" alt="">
+		</div>
+	</div>
+	<header>
+		<nav class="navbar navbar-default yamm" role="navigation">
+			<div class="container">
+				<div class="sun rotate">
+					<img src="assets/images/sun.png" alt="">
+				</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" onclick="toggleFullScreen();"><img src="assets/images/logo.png" alt="Logo Sunny Daycare"> </a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li id="btnMute" class="hidden">
+							<a href="#" id="aMute"><img width="48px" height="48px" id="imgMute" src="assets/images/Sound_on.png" /></a>
+						</li>
+						<li id="btnAuto" class="hidden">
+							<a href="#" id="aAuto"><img src="assets/images/auto.png" /></a>
+						</li>
+						<li class="active">
+							<a href="#" onclick="index()"><img src="assets/images/home_icon.png" /></a>
+						</li>
+						<li class="dropdown yamm-fw">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="assets/images/groups_icon.png" /></a>
+							<ul class="dropdown-menu">
+								<li>
+									<div class="yamm-content">
+										<div id="ddContents" class="table text-center programs">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li id="btnBack" class="hidden">
+							<a href="#" id="aBack"><img src="assets/images/back_icon.png" /></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img id="accent" src="assets/images/egypt.png" /> </a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#" id="aEgypt"><img src="assets/images/egypt.png" width="32" /> اللهجة المصرية</a>
+								</li>
+								<li>
+									<a href="#" id="aGulf"> <img src="assets/images/gulf.png" width="32" /> اللهجة الخليجية</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/help_icon.png" /> </a>
+							<ul class="dropdown-menu">
+								<li><a href="#" data-toggle="modal" data-target="#modal_1">حول البرنامج </a></li>
+								<li><a href="#" data-toggle="modal" data-target="#modal_2">تعليمات التشغيل</a></li>
+							</ul>
+						</li>
+						<li id="btnCloseApplication">
+							<a href="#" data-toggle="modal" data-target="#modal_3"><img src="assets/images/exit.png" width="48" height="48" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="contents"></div>
+	<div id="footerImages"></div>
+	<footer class="type1">
+		<div id="fish1"></div>
+		<div id="fish2"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5" style="min-height:200px">
+				</div>
+				<div class="col-md-7">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 copyright">
+					برنامج هيا نتكلم | جميع الحقوق محفوظة © 2017 | دكتورة مروة المليجي | تنفيذ شركة<a href="http://www.innotech.com.eg/" target="_blank"> إنوتك </a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="dialog"></div>
+
+	<div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">حول البرنامج</h4>
+				</div>
+				<div class="modal-body text-center">
+
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#aboutProg" data-toggle="tab">حول البرنامج</a></li>
+								<li><a href="#owner" data-toggle="tab">صاحبة الفكرة</a></li>
+								<li><a href="#whyWeDidIt" data-toggle="tab">أسباب إعداد البرنامج </a></li>
+
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane active" id="aboutProg">
+									<img src="assets/images/logo.png">
+									<div class="clearfix"></div>
+									<div class="row">
+										<div class="col-md-12">
+											<h4 class="color-motive">سلسلة هيا نتكلم، إصدار 1.01 </h4>
+
+											<hr style="width:40%;">
+											<p>تعد سلسلة هيا نتكلم أول مجموعة باللهجة الخليجية، وهي بمثابة موسوعة شاملة تساعد الطفل علي التعرف ونطق مسميات الاشياء المحيطة بالطفل وفقا للمجموعات الضمنية، مما يساهم في اثراء الحصيلة اللغوية لدية كما تتسم تلك السلسلة بشمولها علي عدة مراحل تناسب جميع المستويات منها
+											</p>
+											<p><strong class="color-motive">الكلمات :</strong>
+												<br> والتي تمكن الطفل من سماع الكلمه بوضوح مع التكرار بفاصل زمني محدد يساعد الطفل علي التقليد و التكرار و الحفظ بسهوله.</p>
+											<p><strong class="color-motive">الجمـــــل : </strong>
+												<br> يستطيع الطفل من خلالها وضع الكلمه المراد تعلمها بجملة بسيطه تساعده علي اثراء حصيلته اللغوية وزياده قدرتة علي الكلام.</p>
+											<p><strong class="color-motive">الالغـــاز :  </strong>
+												<br> تنمي مهارت التمييز البصري و تنمية الادراك البصري من خلال الالغاز وتجميع الاجزاء المختلفه للصورة.</p>
+											<p><strong class="color-motive">الإختبـار :  </strong>
+												<br> يتيح الاختبار فرصة لتقييم الطفل و معرفة مدي استيعابة و استفادتة من التدريبات ،وتحديد الكلمات و الجمل التي اتقنها و التي تحتاج الي اعاده تدريب كما تنمي مهارات التمييز السمعي و الادراك السمعي لدي الطفل المتدرب.</p>
+
+
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+
+											<h4 class="color-motive text-right">من المستفيد من السلسله؟</h4>
+
+											<p> تساعد السلسلة
+
+											</p>
+											<ul class="text-right">
+
+												<li>اخصائين التخاطب و العاملين بمجال التربية الخاصة</li>
+												<li>الاباء و الامهات</li>
+												<li>مدارس التربيه الخاصة و التوحد</li>
+												<li>مراكز التخاطب و التعديل السلوكي</li>
+												<li>فصول ضعاف السمع</li>
+												<li>فصول اضطرابات الانتباه و التركيز</li>
+												<li>مدارس الدمج و صعوبات التعلم</li>
+											</ul>
+
+
+
+
+										</div>
+										<div class="col-md-12">
+											<p><span class="color-motive"><strong>هدفنا</strong>  </span>
+												<br> توصيل المعلومة بصورة مبسطة و شيقة.</p>
+
+
+											<p><span class="color-motive"><strong>أملنـــــا</strong> </span>
+												<br> ان تكون المجموعة سببا في مساعدة الاطفال علي النطق و الكلام و تخفيف المعاناه علي اولياء الامور في التدريب المنزلي لاطفالهم بسهوله و يسر واثراء جلسات التخاطب للاخصائيين العاملين بالمجال في المدارس او المراكز الخاصة وتنوع محتوي الجلسة.</p>
+											<p>و نسال الله العلي القدير ان يجعل هذا العمل مأجوراً بالدنيا و الاخرة وبميزان حسنات كل من عمل عليه من اول مرحله الاعداد للمادة العلميه و العاملين بمرحله التسجيل و المهندسين القائمين علي التصميم والله ولي التوفيق.
+												<br>
+												<strong>د/مروة المليجي</strong>
+											</p>
+										</div>
+										<div class="col-md-12">
+
+											<h4 class="color-motive text-right"> ماهي الفئات المستهدفة من سلسلة هيا نتكلم؟ </h4>
+
+
+											<ul class="text-right">
+
+												<li>تأخر الكلام لدي العاديين و ذوي الاحتياجات الخاصة </li>
+												<li>حالات الضعف السمعي </li>
+												<li> حالات زارعة القوقعة </li>
+												<li>حالات التوحد و طيف التوحد </li>
+												<li>متلازمة داون </li>
+												<li>حالات التاخر الذهني </li>
+												<li>صعوبات التعلم </li>
+												<li>حالات النشاط الزائد </li>
+												<li>حالات الشلل الدماغي </li>
+												<li>حالات التلعثم في الكلام </li>
+												<li>حالات ضعف الانتباه و التركيز </li>
+												<li> كما تساعد في علاج العديد من حالات عيوب النطق مثل (الحذف – الابدال – التشويه) </li>
+
+											</ul>
+
+											<h4 class="color-motive text-right"> السن المستفيد من البرنامج؟ </h4>
+											<p>توجه سلسلة هيا نتكلم للاطفال من عمر سنه و حتي 15 عاما بالنسبه لحالات التاخر الذهني.</p>
+											<hr>
+											<p class="color-motive text-right">لا يجوز تصوير أو تخزين أو إقتباس أي جزء من البرنامج بأي وسيلة تخزين بيانات أو نشره إلا بإذن كتابي صريح من المؤلف.</p>
+
+
+
+
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr>
+										<span class="col-xs-8 col-md-8">
+										
+										برنامج هيا نتكلم | جميع الحقوق محفوظة © 2017 | دكتورة مروة المليجي   
+											</span>
+
+										<span class="col-xs-4 col-md-4 pull-left">
+                                <a href="http://www.innotech.com.eg/" target="_blank"><i style="color: #fff;">iNNO</i><i style="color: #82c700">TECH</i></a>&nbsp;
+                             |&nbsp;  تنفيذ شركة 
+
+                            </span>
+									</div>
+								</div>
+								<div class="tab-pane" id="owner">
+
+									<div class="row">
+										<div class="col-md-9">
+											<h4><span class="color-motive">دكتورة تخاطب / </span> مروة عبد الوهاب المليجي </h4>
+
+											<p>&nbsp;</p>
+											<p><strong class="color-motive">المؤهلات العلمية</strong></p>
+
+
+											<div class="table-responsive">
+
+												<table>
+													<tbody>
+														<tr>
+															<td width="396">
+																<p> الدكتوراة في التربية </p>
+															</td>
+															<td width="172">
+																<p class="color-motive-p">الدرجــــة:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>علم النفس التربوي</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">التخصص:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>جامعة القاهرة - عام 2014</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">مـكان الدراســــة:</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table>
+													<tbody>
+														<tr>
+															<td width="451">
+																<p> الماجستير في التربية </p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">الدرجــــة:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>علم النفس التربوي</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">التخصص:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>اضرابات النطق والكلام</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">التخصص الدقيق:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>جامعة طنطا - عام 2009</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">مـكان الدراســــة:</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<p>&nbsp;</p>
+												<p><strong class="color-motive">الدبلومات التربوية </strong></p>
+												<table>
+													<tbody>
+														<tr>
+															<td width="451">
+																<p>الدبلومة المهنية في التربية</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">&nbsp;&nbsp;&nbsp;&nbsp; 1 - الـمؤهل:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>التربية الخاصة</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">التخصص:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>جامعة عين شمس</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">مـكان الدراسة:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>&nbsp;عام 2000</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">ســـنة التخرج:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>جيد جداً</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">التقدير:</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<p>&nbsp;</p>
+												<table>
+													<tbody>
+														<tr>
+															<td width="451">
+																<p>الدبلوم الخاص في التربية</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p"> 2 - المؤهل:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>الصحة النفسية</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">التخصص:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>جامعة طنطا</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">مـكان الدراسة:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>&nbsp;عام 2001</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">سنة التخرج:</p>
+															</td>
+														</tr>
+														<tr>
+															<td width="451">
+																<p>جيد جداً</p>
+															</td>
+															<td width="187">
+																<p class="color-motive-p">التقدير:</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<p>&nbsp;</p>
+
+												<p><strong class="color-motive">الدبلومات والدورات المتخصصة</strong></p>
+												<table>
+													<tbody>
+														<tr>
+															<td>
+																<p>1- دبلومة التخاطب وعلاج امراض النطق والكلام 2000
+																</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>2- دورة الاسس النظريه و العملية للتوحد 2002</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>3- دورة العلاج السلوكي 2003</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>4- دورة لغة الاشارة للصم 2008</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>5- الدبلومة المتخصصة في إضطرابات النطق والكلام والارشاد النفسي الاسري 2008</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>6- الدورة التدريبية لصعوبات التعلم 2009</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>7- ورشة عمل بناء التراكيب اللغوية عند الاطفال ذوي اضطراب طيف التوحد 2016</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>8- ورشه عمل التاهيل المهني لذوي الاحتياجات الخاصة 2016</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>9- ندوه استخدام التقنيات الحديثة في تعليم الاشخاص ذوي الاعاقة 2016</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>10- ندوة كيفيه تعامل الوالدين مع اطفالهم 2016</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>11- دوره التكامل الحسي 2017</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>12- ورشة عمل بناء الجسور من خلال التكامل الحسي 2017</p>
+															</td>
+
+														</tr>
+														<tr>
+															<td>
+																<p>13- دورة تدريب المدربين TOT</p>
+															</td>
+
+														</tr>
+													</tbody>
+												</table>
+
+											</div>
+
+
+
+
+
+
+
+
+
+										</div>
+										<div class="col-md-3"> <img src="assets/images/profile.png" class="img-thumbnail"></div>
+
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<hr>
+
+											<p><strong class="color-motive">الخبرات العملية </strong> </p>
+
+											<ul class="text-right">
+												<li>العمل في العديد من مراكز التخاطب بمصر و العالم العربي لاكثر من 18 عام.</li>
+												<li> الاشترك بالعديد من الدورات وورش العمل و الندوات المتخصصه و الندوات العلمية في مختلف مجالات التربيه الخاصه و التخاطب.</li>
+												<li>عضويه العديد من جمعيات علم النفس و الارشاد النفسي و النطق و الكلام المصريه و العالمية.</li>
+												<li> الاشترك بتصميم العديد من برامج التاهيل و التدخل المبكر لمختلف حالات اضطرابات النطق والكلام و حالات صعوبات التعلم و التلعثم و تشتت الانتباه السمعي و البصري.</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="whyWeDidIt">
+
+
+									<div class="row">
+										<div class="col-md-12">
+											<h4 class="color-motive">لمحه عن أسباب اعداد البرنامج </h4>
+
+											<hr style="width:40%;">
+											<p> من خلال العمل المتواصل الدؤوب في هذا المجال و نظرا لما لمسته من صعوبة الحصول علي المواد التعليميه الخاصه بفئه اضطرابات النطق و الكلام جاءت فكرة العمل علي اعداد هذه السلسله هيا نتكلم لتكون مرجعا شاملا لكلا من الاخصائيين او الاباء او العاملين في المجال نظرا لما تتسم به هذه السلسله من الجمع بين الاطار العلمي الدقيق وخبرة التطبيق العملي من واقع خبرتي في العمل المباشر و تحديد ما يتلائم مع الاطفال و يناسب قدراتهم و مراعاه هذه العناصر عند الاعداد و التصميم للسلسله ،كما توجهت هذه السلسه للاطفال باللهجه المصريه و اللهجه الخليجيه حتي يستفيد منها اكبر شريحه من الاطفال في مختلف البلدان العربية.</p>
+
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">تعليمات التشغيل</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tablayout" data-toggle="tab">الشاشة الرئيسية</a></li>
+								<li><a href="#levels" data-toggle="tab">شاشة المستويات</a></li>
+								<li><a href="#words" data-toggle="tab">شاشة الكلمات / الجمل </a></li>
+								<li><a href="#puzzles" data-toggle="tab">شاشة الألغاز</a></li>
+								<li><a href="#tests" data-toggle="tab">شاشة إختبار</a></li>
+								<li><a href="#taskbar" data-toggle="tab">شريط المهام</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane active" id="tablayout">
+									<img src="assets/images/0.jpg" alt=" " class="pull-left fit-image">
+									<div class="clearfix"></div>
+									<div class="row">
+										<div class="col-sm-12">
+											<h4 class="color-motive">الشاشة الرئيسية</h4>
+											<p> تحتوي الشاشة الرئيسية علي الآتي: </p>
+											<p>
+												1- أزرار الإنتقال السريع للمجموعات الرئيسية في البرنامج.
+												<br>
+												<br>
+												<span><img src="assets/images/indexPage/contents/body_parts.png" class="ug-img" alt="main icon"></span>
+												<span><img src="assets/images/indexPage/contents/family.png" class="ug-img" alt="main icon"></span>
+												<span><img src="assets/images/indexPage/contents/cloths.png" class="ug-img" alt="main icon"></span>
+												<span><img src="assets/images/indexPage/contents/makeup.png" class="ug-img" alt="main icon"></span>
+												<span><img src="assets/images/indexPage/contents/personal_stuff.png" class="ug-img" alt="main icon"></span>
+
+
+											</p>
+											<hr width="95%">
+
+											<p> 2- القائمة الرئيسية ومنها يمكن تنفيذ الأوامر الآتية: </p>
+
+											<p><span><img src="assets/images/home_icon.png" class="ug-img" alt="main icon"></span> الإنتقال إلي الصفحة الرئيسية للبرنامج حين الضغط عليها من أي مكان في البرنامج. </p>
+											<p><span><img src="assets/images/groups_icon.png" class="ug-img" alt="main icon"></span> الإنتقال إلي المجموعات الرئيسية في البرنامج. </p>
+
+											<p><span><img src="assets/images/egypt.png" class="ug-img" alt="main icon"></span>الإختيار ما بين اللهجة المصرية / الخليجية للنظام ككل. </p>
+
+											<p><span><img src="assets/images/back_icon.png" class="ug-img" alt="main icon"></span> العودة إلي شاشة المستويات، ويظهر فقط داخل شاشات ( كلمات / جمل / ألغاز / تدريبات ). </p>
+											<p><span><img src="assets/images/auto.png" class="ug-img" alt="main icon"></span>تفعيل / إيقاف تفعيل خاصية التشغيل التلقائي للبرنامج، ويظهر فقط داخل شاشات ( كلمات / جمل ) . </p>
+
+											<p><span><img src="assets/images/Sound_on.png" class="ug-img" alt="main icon"></span>تفعيل / إيقاف تفعيل صوت الخلفية الموسيقية للبرنامج. </p>
+
+											<p><span><img src="assets/images/help_icon.png" class="ug-img" alt="main icon"></span> معرفة إصدار نسخة البرنامج المستخدمة / تعليمات التشغيل الخاصة بالبرنامج. </p>
+
+											<p><span><img src="assets/images/exit.png" class="ug-img" alt="main icon"></span> للخروج من البرنامج. </p>
+
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="levels">
+									<img src="assets/images/1.jpg" alt=" " class="pull-left fit-image">
+									<div class="clearfix"></div>
+									<div class="row">
+										<div class="col-sm-12">
+											<h4 class="color-motive">شاشة المستويات</h4>
+											<p> تحتوي شاشة المستويات علي الآتي: </p>
+
+											<p>1- أزرار الإنتقال السريع للمستويات الخاصة بالمجموعة الرئيسية المختارة في البرنامج وتشمل الآتي: . </p>
+
+											<p><span><img src="assets/images/indexPage/subPages/contents/words.png" class="ug-img-lg" alt="main icon"></span> الإنتقال إلي مجموعة الكلمات الخاصة بالمجموعة الرئيسية المختارة. </p>
+											<p><span><img src="assets/images/indexPage/subPages/contents/phrases.png" class="ug-img-lg" alt="main icon"></span> الإنتقال إلي مجموعة الجمل الخاصة بالمجموعة الرئيسية المختارة. </p>
+
+											<p><span><img src="assets/images/indexPage/subPages/contents/practices.png" class="ug-img-lg" alt="main icon"></span> الإنتقال إلي مجموعة إختبار الخاصة بالمجموعة الرئيسية المختارة. </p>
+
+											<p><span><img src="assets/images/indexPage/subPages/contents/puzzles.png" class="ug-img-lg" alt="main icon"></span>الإنتقال إلي مجموعة الألغاز الخاصة بالمجموعة الرئيسية المختارة. </p>
+
+
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="words">
+									<img src="assets/images/2.jpg" alt=" " class="pull-left fit-image">
+									<div class="clearfix"></div>
+
+									<div class="row">
+
+										<div class="col-sm-12">
+											<h4 class="color-motive">شاشة الكلمات / الجمل </h4>
+											<p> تحتوي شاشة الكلمات / الجمل علي الآتي: </p>
+
+											<p>1- الكلمات / الجمل الخاصة بالمجموعة الرئيسية المختارة :</p>
+
+											<p><span><img src="assets/images/wordsOrPhrases.png" class="ug-img" alt="main icon"></span> يمكنك تشغيل أي كلمة بالضغط عليها لرؤية الصورة وسماع نطق الكلمة. </p>
+											<p><span><img src="assets/images/auto.png" class="ug-img" alt="main icon"></span> كما يمكنك الضغط علي زر التشغيل التلقائي لعرض الكلمات / الجمل ألياً. </p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="puzzles">
+									<img src="assets/images/3.jpg" alt=" " class="pull-left fit-image">
+									<div class="clearfix"></div>
+
+									<div class="row">
+
+										<div class="col-sm-12">
+											<h4 class="color-motive">شاشة الألغاز </h4>
+											<p> تحتوي شاشة الألغاز علي مجموعة الألغاز الخاصة بالمجموعة الرئيسية المختارة وبها ثلاث مستويات ( 4 / 6 / 8 ) أجزاء،
+												<br>وعند الضغط علي أي منها يظهر الآتي: </p>
+
+											<p>1- يظهر الصورة المراد ترتيبها موزعة بطريقة عشوائية.</p>
+											<p>2- نقوم بالضغط علي الصورة في الشكل رقم (1) ثم سحبها الي الشكل رقم (2) ثم نترك الصورة ونسحب باقي الصور حتي تكتمل الصورة.</p>
+											<p>3- عند الإنتهاء من تجميع أجزاء الصورة سوف يظهر تعزيز لكي يخبرك ما اذا كانت إجابتك صحيحة أم لا.</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tests">
+									<img src="assets/images/4.jpg" alt=" " class="pull-left fit-image">
+									<div class="clearfix"></div>
+
+									<div class="row">
+
+										<div class="col-sm-12">
+											<h4 class="color-motive">شاشة إختبار </h4>
+											<p> تحتوي شاشة إختبار علي مجموعة إختبار الخاصة بالمجموعة الرئيسية المختارة وبها مستويان ( 3 / 4 ) صور
+												<br>وعند الضغط علي أي منها يظهر الآتي: </p>
+
+											<p>1- يظهر مجموعة صور عشوائية ويتم النطق لاسم أحد الصور الموجودة والمطلوب إختيار الصورة الصحيحة التي توافق الصوت المسموع.</p>
+
+											<p>2- عند إختيار الصورة الصحيحة سوف يظهر تعزيز لكي يخبرك ما اذا كانت إجابتك صحيحة أم لا.</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="taskbar">
+									<img src="assets/images/5.jpg" alt=" " class="pull-left fit-image">
+									<div class="clearfix"></div>
+
+									<div class="row">
+
+										<div class="col-sm-12">
+											<h4 class="color-motive">شريط المهام </h4>
+											<p> يحتوي شريط المهام علي مجموعة من المهام التي يمكن تنفيذها
+												<br>وعند الضغط علي أي منها يتم الآتي: </p>
+
+											<p>1- الإنتقال إلي الصورة السابقة.</p>
+
+											<p>2- الإنتقال إلي الشاشة الرئيسية</p>
+											<p>3- الإنتقال إلي شاشة المستويات الخاصة بالمجموعة المختارة</p>
+											<p>4- الإستماع إلي الصوت مرة أخري</p>
+											<p>5- الإنتقال إلي الصورة التالية.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">هيا نتكلم || Let's Talk</h4>
+				</div>
+				<div class="modal-body">
+					<div class="modal-wrapper">
+						<div class="modal-text" style="text-align: center;">
+							<h5 style="text-align: center; margin: 40px auto;"> هل تريد حقاً الخروج من البرنامج؟ </h5>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="modal-footer">
+					
+					<button type="button" class="btn btn-primary" data-dismiss="modal"> إلغاء </button>
+					<button type="button" class="btn btn-primary" onclick="window.close()">نعم </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SCRIPTS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/jquery-ui.custom.min.js"></script>
+	<script src="assets/js/jquery.parallax.js"></script>
+	<!--<script src="assets/js/jquery.fitvids.js"></script>-->
+	<script src="assets/js/jquery.flexslider-min.js"></script>
+	<script src="assets/js/jquery.browser.min.js"></script>
+	<script src="assets/js/jquery.appear.js"></script>
+	<!--<script src="assets/js/jquery.placeholder.min.js"></script>-->
+	<script src="assets/js/jquery.spritely.js"></script>
+	<!--<script src="assets/js/calendar.js"></script>-->
+	<script src="assets/js/less.min.js"></script>
+	<script src="assets/js/hoverIntent.js"></script>
+	<!--<script src="assets/js/masonry.min.js"></script>-->
+	<!--<script src="assets/js/moment.min.js"></script>-->
+	<!--<script src="assets/js/fullcalendar.min.js"></script>-->
+	<!--<script src="assets/js/datepicker/bootstrap-datepicker.js"></script>-->
+	<!--<script src="assets/form/js/contact-form.js"></script>-->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="js/shared/dialogService.js"></script>
+	<script src="js/shared/arrayService.js"></script>
+	<script src="js/shared/audioService.js"></script>
+	<script src="js/shared/accentService.js"></script>
+	<script src="js/shared/navigationService.js"></script>
+	<script src="js/shared/autoModeService.js"></script>
+	<script src="js/shared/shared.js"></script>
+	<script src="js/content_main.js"></script>
+	<script src="js/content_words.js"></script>
+	<script src="js/content_phrases.js"></script>
+	<script src="js/content_puzzles.js"></script>
+	<script src="js/content_practices.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

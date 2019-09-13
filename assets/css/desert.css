@@ -1,0 +1,456 @@
+/* =================== */
+/* === BODY STYLES === */
+body {
+  background: #f7951c;
+  background: -moz-radial-gradient(center, ellipse cover, #fee057 0%, #f7951c 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fee057), color-stop(100%, #f7951c));
+  background: -webkit-radial-gradient(center, ellipse cover, #fee057 0%, #f7951c 100%);
+  background: -o-radial-gradient(center, ellipse cover, #fee057 0%, #f7951c 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #fee057 0%, #f7951c 100%);
+  background: radial-gradient(ellipse at center, #fee057 0%, #f7951c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7fceee', endColorstr='#2499d9', GradientType=1);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+a {
+  color: #8c4600;
+}
+a:hover,
+a:focus {
+  color: #8c4600;
+}
+.form-control:focus {
+  border-color: #8c4600;
+}
+/* ===================== */
+/* === NAVBAR STYLES === */
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a,
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a:hover,
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a:focus {
+  color: #8c4600;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #8c4600;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #8c4600;
+  text-decoration: underline;
+}
+.navbar .dropdown-menu > li a {
+  color: #8c4600;
+}
+.navbar .dropdown-menu > li a:hover,
+.navbar .dropdown-menu > li a:focus {
+  color: #ff8000;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar .dropdown-menu > li a:hover .program-title,
+.navbar .dropdown-menu > li a:focus .program-title {
+  color: #ff8000;
+}
+.yamm .nav.navbar-right .yamm-fw .dropdown-menu h4 {
+  color: #ff8000;
+}
+.navbar .dropdown-menu li.active a {
+  color: #ff8000;
+}
+.navbar li.dropdown > .dropdown-menu > li.dropdown-submenu:after {
+  color: #8c4600;
+}
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:hover:after,
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:active:after,
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:focus:after {
+  color: #ff8000;
+}
+/* ================== */
+/* === TYPOGRAPHY === */
+.color-motive {
+  color: #8c4600;
+}
+.color-motive-light {
+  color: #ff8000;
+}
+blockquote p:before,
+blockquote p:after {
+  color: #8c4600;
+}
+.blockquote.socials-top .btn {
+  background-color: #8c4600;
+  border-color: #8c4600;
+}
+.blockquote.socials-top .btn:hover,
+.blockquote.socials-top .btn:focus {
+  background-color: #ff8000;
+  border-color: #ff8000;
+}
+.blockquote.socials-top ul.socials > li > a {
+  background-color: #8c4600;
+}
+.blockquote.socials-top ul.socials > li > a:hover,
+.blockquote.socials-top ul.socials > li > a:focus {
+  background-color: #ff8000;
+}
+/* =================== */
+/* === BREADCRUMBS === */
+.breadcrumb {
+  padding: 0px;
+  background-color: transparent;
+}
+.breadcrumb a:hover {
+  color: #8c4600;
+}
+.breadcrumb > .active {
+  color: #ff8000;
+}
+/* =============== */
+/* === BUTTONS === */
+.btn-primary {
+  background-color: #8c4600;
+  border-color: #8c4600;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #ff8000;
+  border-color: #ff8000;
+}
+footer .contactForm .btn-primary {
+  background-color: #ff8000;
+  border-color: #ff8000;
+}
+footer .contactForm .btn-primary:hover {
+  background-color: #8c4600;
+  border-color: #8c4600;
+}
+.btn-more {
+  background-color: #ff8000;
+  border-color: #ff8000;
+}
+.btn-more:hover {
+  background-color: #8c4600;
+  border-color: #8c4600;
+}
+/* ============= */
+/* === LISTS === */
+ol li:before {
+  color: #8c4600;
+}
+ul.circle li:before {
+  background-color: #8c4600;
+}
+/* ================== */
+/* === PAGINATION === */
+.pagination li:first-child a,
+.pagination li:last-child a,
+.pagination li:first-child a:hover,
+.pagination li:last-child a:hover {
+  color: #8c4600;
+}
+.pagination > li > a,
+.pagination > li > span {
+  background-color: #fbca8e;
+  border-color: #fbca8e;
+  color: #8c4600;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #ff8000;
+  border-color: #ff8000;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: #8c4600;
+  border-color: #8c4600;
+  color: #ffffff;
+}
+/* ====================== */
+/* === GENERAL STYLES === */
+.programs .program-title {
+  color: #8c4600;
+}
+.sub-menu .title {
+  color: #ff8000;
+}
+.blog-tags > li,
+.blog-categories > li {
+  background-color: #fbca8e;
+}
+.shadow-box.daycare-widget ul li a:hover,
+.shadow-box.daycare-widget ul li a:focus {
+  color: #ff8000;
+}
+.shadow-box.daycare-widget ul li.active a {
+  color: #ff8000;
+}
+.shadow-box.daycare-widget.widget-archives ul li a {
+  color: #8c4600;
+  text-decoration: underline;
+}
+.list-counter .timestamp {
+  color: #ff8000;
+}
+.list-counter .list-quantity {
+  background-color: #fbca8e;
+}
+.scrollUp,
+.scrollDown {
+  color: #8c4600;
+}
+.blog-author {
+  background-color: #fbca8e;
+}
+.commentList .btn-primary {
+  background-color: #fbca8e;
+  border-color: #fbca8e;
+  color: #000000;
+}
+.commentList .btn-primary:hover {
+  background-color: #8c4600;
+  border-color: #8c4600;
+  color: #ffffff;
+}
+.commentList a {
+  color: #ff8000;
+}
+article .article-info .date {
+  background-color: #ff8000;
+}
+article .article-info .date:before {
+  border-color: transparent transparent transparent #ff8000;
+}
+article .article-info .article-socials .btn {
+  background-color: #ff8000;
+}
+article .article-info .article-socials .btn:hover {
+  background-color: #8c4600;
+}
+.quote {
+  background-color: #fbca8e;
+}
+footer.type1 a:hover {
+  color: #8c4600;
+}
+footer.type2,
+footer.type3 {
+  color: #8c4600;
+}
+footer.type2 a,
+footer.type3 a {
+  color: #8c4600;
+}
+footer.type2 .contacts,
+footer.type3 .contacts {
+  background-color: #8c4600;
+  color: #ffffff;
+}
+footer.type2 .contacts a,
+footer.type3 .contacts a {
+  color: #ffffff;
+}
+footer.type2 .contacts a:hover,
+footer.type3 .contacts a:hover,
+footer.type2 .contacts a:focus,
+footer.type3 .contacts a:focus,
+footer.type2 .contacts a:active,
+footer.type3 .contacts a:active {
+  color: #ff8000 !important;
+}
+.line-right {
+  border-right: 1px solid rgba(140, 70, 0, 0.3);
+}
+/* =================== */
+/* === IMAGE BLOCK === */
+.info-block {
+  background-color: #fbca8e;
+}
+/* =============== */
+/* === TWITTER === */
+.tweets_display ul.tweet_list li a {
+  color: #ff8000;
+}
+/* ======================== */
+/* === IMAGE/PERSON BOX === */
+.person-box .description,
+.image-box .description {
+  background-color: #8c4600;
+}
+.person-box .description:hover,
+.image-box .description:hover,
+.person-box .description.hover,
+.image-box .description.hover {
+  background-color: rgba(140, 70, 0, 0.8);
+}
+.person-box .inner-box,
+.image-box .inner-box {
+  background-color: #8c4600;
+}
+.person-box .person-contacts-title,
+.image-box .person-contacts-title {
+  color: #fbca8e;
+}
+.image-box:hover .description {
+  background-color: rgba(140, 70, 0, 0.8);
+}
+/* =============== */
+/* === SOCIALS === */
+.socials-top .btn {
+  background-color: #ff8000;
+  border-color: #ff8000;
+}
+.socials-top .btn:hover,
+.socials-top .btn:focus {
+  background-color: #8c4600;
+  border-color: #8c4600;
+}
+ul.socials > li > a {
+  background-color: #ff8000;
+}
+ul.socials > li > a:hover,
+ul.socials > li > a:focus,
+ul.socials > li > a:active {
+  background-color: #8c4600;
+}
+/* ================= */
+/* === ACCORDION === */
+.panel-group.accordion > .panel > .panel-heading > a {
+  color: #8c4600;
+}
+.panel-group.accordion-type2 > .panel > .panel-heading > a {
+  background-color: #8c4600;
+  border: none;
+}
+.panel-group.accordion-type2 > .panel > .panel-heading > a.collapsed {
+  background-color: #ff8000;
+}
+/* ============== */
+/* === TABLES === */
+.table thead {
+  background-color: #fbca8e;
+}
+.table thead .title-important {
+  background-color: #8c4600;
+}
+/* ================ */
+/* === CALENDAR === */
+.calendar .fc-toolbar {
+  color: #8c4600;
+}
+.calendar .fc-toolbar .fc-left,
+.calendar .fc-toolbar .fc-center,
+.calendar .fc-toolbar .fc-right {
+  padding: 13px 25px;
+}
+.calendar .fc-toolbar .fc-header-title h2 {
+  color: #8c4600;
+}
+.calendar .fc-toolbar .fc-button {
+  color: #ff8000;
+}
+.calendar .fc-toolbar .fc-button.fc-button-today {
+  color: #ff8000;
+}
+.calendar .fc-event .fc-content {
+  background-color: #8c4600;
+}
+.calendar .fc-event .fc-content:hover {
+  background-color: #ff8000;
+}
+/* ======================== */
+/* === POPOVER & TOOLTIP === */
+.popover .popover-title {
+  background-color: #ff8000;
+}
+/* ============ */
+/* === TABS === */
+.nav-tabs {
+  background-color: #fbca8e;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #8c4600;
+  border-color: #8c4600;
+}
+.nav-tabs > li {
+  margin-bottom: 0;
+}
+.nav-tabs > li > a {
+  border-right-color: #ffffff;
+  background-color: #fbca8e;
+  color: #8c4600;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  border-color: #ff8000;
+  background-color: #ff8000;
+}
+.tab-content > .active {
+  background-color: #8c4600;
+}
+/* ================== */
+/* === FLEXSLIDER === */
+.flexslider a {
+  color: #8c4600;
+}
+.flexslider a:hover,
+.flexslider a:focus,
+.flexslider a:active {
+  color: #ffffff;
+}
+.flexslider.std-slider .flex-direction-nav .flex-next:hover,
+.flexslider.std-slider .flex-direction-nav .flex-prev:hover {
+  color: #8c4600;
+}
+/* ================== */
+/* === DATEPICKER === */
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+  background-color: #8c4600;
+  border-color: #8c4600;
+}
+/* ===================== */
+/* === IMAGE GALLERY === */
+.packeryItem .description {
+  background-color: rgba(255, 128, 0, 0.8);
+}
+.gallerymessage {
+  background-color: #ff8000;
+}
+.navbar-default .navbar-toggle {
+  border-color: #8c4600;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #8c4600;
+}

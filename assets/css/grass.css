@@ -1,0 +1,454 @@
+/* =================== */
+/* === BODY STYLES === */
+body {
+  background: #7fceee;
+  background: -moz-radial-gradient(center, ellipse cover, #7fceee 0%, #2499d9 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #7fceee), color-stop(100%, #2499d9));
+  background: -webkit-radial-gradient(center, ellipse cover, #7fceee 0%, #2499d9 100%);
+  background: -o-radial-gradient(center, ellipse cover, #7fceee 0%, #2499d9 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #7fceee 0%, #2499d9 100%);
+  background: radial-gradient(ellipse at center, #7fceee 0%, #2499d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7fceee', endColorstr='#2499d9', GradientType=1);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body:before {
+  z-index: -1;
+  content: "";
+  background: rgba(127, 206, 238, 0);
+  background: -moz-linear-gradient(top, rgba(127, 206, 238, 0) 0%, #c7eced 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(127, 206, 238, 0)), color-stop(100%, #c7eced));
+  background: -webkit-linear-gradient(top, rgba(127, 206, 238, 0) 0%, #c7eced 100%);
+  background: -o-linear-gradient(top, rgba(127, 206, 238, 0) 0%, #c7eced 100%);
+  background: -ms-linear-gradient(top, rgba(127, 206, 238, 0) 0%, #c7eced 100%);
+  background: linear-gradient(to bottom, rgba(127, 206, 238, 0) 0%, #c7eced 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7fceee', endColorstr='#c7eced', GradientType=0);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+body.bgcolor5 {
+    background: #ceeb77;
+    background: -moz-radial-gradient(center, ellipse cover, #ceeb77 0%, #acd924 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ceeb77), color-stop(100%, #acd924));
+    background: -webkit-radial-gradient(center, ellipse cover, #ceeb77 0%, #acd924 100%);
+    background: -o-radial-gradient(center, ellipse cover, #ceeb77 0%, #acd924 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #ceeb77 0%, #acd924 100%);
+    background: radial-gradient(ellipse at center, #ceeb77 0%, #acd924 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ceeb77', endColorstr='#acd924', GradientType=1);
+}
+body.bgcolor5:before{
+    display: none;
+    }
+a {
+  color: #00661a;
+}
+a:hover,
+a:focus {
+  color: #00661a;
+}
+.form-control:focus {
+  border-color: #00661a;
+}
+/* ===================== */
+/* === NAVBAR STYLES === */
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a,
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a:hover,
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a:focus {
+  color: #00661a;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #00661a;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #00661a;
+  text-decoration: underline;
+}
+.navbar .dropdown-menu > li a {
+  color: #00661a;
+}
+.navbar .dropdown-menu > li a:hover,
+.navbar .dropdown-menu > li a:focus {
+  color: #00b259;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar .dropdown-menu > li a:hover .program-title,
+.navbar .dropdown-menu > li a:focus .program-title {
+  color: #00b259;
+}
+.yamm .nav.navbar-right .yamm-fw .dropdown-menu h4 {
+  color: #00b259;
+}
+.navbar .dropdown-menu li.active a {
+  color: #00b259;
+}
+.navbar li.dropdown > .dropdown-menu > li.dropdown-submenu:after {
+  color: #00661a;
+}
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:hover:after,
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:active:after,
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:focus:after {
+  color: #00b259;
+}
+/* ================== */
+/* === TYPOGRAPHY === */
+.color-motive {
+  color: #00661a;
+}
+.color-motive-light {
+  color: #00b259;
+}
+blockquote p:before,
+blockquote p:after {
+  color: #00b259;
+}
+/* =================== */
+/* === BREADCRUMBS === */
+.breadcrumb {
+  padding: 0px;
+  background-color: transparent;
+}
+.breadcrumb a:hover {
+  color: #00661a;
+}
+.breadcrumb > .active {
+  color: #00b259;
+}
+/* =============== */
+/* === BUTTONS === */
+.btn-primary {
+  background-color: #00661a;
+  border-color: #00661a;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #00b259;
+  border-color: #00b259;
+}
+footer .contactForm .btn-primary {
+  background-color: #00661a;
+  border-color: #00661a;
+}
+footer .contactForm .btn-primary:hover {
+  background-color: #00b259;
+  border-color: #00b259;
+}
+/* ============= */
+/* === LISTS === */
+ol li:before {
+  color: #00661a;
+}
+ul.circle li:before {
+  background-color: #00661a;
+}
+/* ================== */
+/* === PAGINATION === */
+.pagination li:first-child a,
+.pagination li:last-child a,
+.pagination li:first-child a:hover,
+.pagination li:last-child a:hover {
+  color: #00661a;
+}
+.pagination > li > a,
+.pagination > li > span {
+  background-color: #b4e6d4;
+  border-color: #b4e6d4;
+  color: #00661a;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #00b259;
+  border-color: #00b259;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: #00661a;
+  border-color: #00661a;
+  color: #ffffff;
+}
+/* ====================== */
+/* === GENERAL STYLES === */
+.programs .program-title {
+  color: #00661a;
+}
+.sub-menu .title {
+  color: #00b259;
+}
+.blog-tags > li,
+.blog-categories > li {
+  background-color: #b4e6d4;
+}
+.shadow-box.daycare-widget ul li a:hover,
+.shadow-box.daycare-widget ul li a:focus {
+  color: #00b259;
+}
+.shadow-box.daycare-widget ul li.active a {
+  color: #00b259;
+}
+.shadow-box.daycare-widget.widget-archives ul li a {
+  color: #00661a;
+  text-decoration: underline;
+}
+.list-counter .timestamp {
+  color: #00b259;
+}
+.list-counter .list-quantity {
+  background-color: #b4e6d4;
+}
+.scrollUp,
+.scrollDown {
+  color: #00661a;
+}
+.blog-author {
+  background-color: #b4e6d4;
+}
+.commentList .btn-primary {
+  background-color: #b4e6d4;
+  border-color: #b4e6d4;
+  color: #000000;
+}
+.commentList .btn-primary:hover {
+  background-color: #00661a;
+  border-color: #00661a;
+  color: #ffffff;
+}
+.commentList a {
+  color: #00b259;
+}
+article .article-info .date {
+  background-color: #00b259;
+}
+article .article-info .date:before {
+  border-color: transparent transparent transparent #00b259;
+}
+article .article-info .article-socials .btn {
+  background-color: #00b259;
+}
+article .article-info .article-socials .btn:hover {
+  background-color: #00661a;
+}
+.quote {
+  background-color: #b4e6d4;
+}
+footer.type1 a:hover {
+  color: #00661a;
+}
+footer.type2,
+footer.type3 {
+  color: #00661a;
+}
+footer.type2 a,
+footer.type3 a {
+  color: #00661a;
+}
+footer.type2 .contacts,
+footer.type3 .contacts {
+  background-color: #00661a;
+  color: #ffffff;
+}
+footer.type2 .contacts a,
+footer.type3 .contacts a {
+  color: #ffffff;
+}
+footer.type2 .contacts a:hover,
+footer.type3 .contacts a:hover,
+footer.type2 .contacts a:focus,
+footer.type3 .contacts a:focus,
+footer.type2 .contacts a:active,
+footer.type3 .contacts a:active {
+  color: #00b259 !important;
+}
+.line-right {
+  border-right: 1px solid rgba(0, 102, 26, 0.3);
+}
+/* =================== */
+/* === IMAGE BLOCK === */
+.info-block {
+  background-color: #b4e6d4;
+}
+/* =============== */
+/* === TWITTER === */
+.tweets_display ul.tweet_list li a {
+  color: #00b259;
+}
+/* ======================== */
+/* === IMAGE/PERSON BOX === */
+.person-box .description,
+.image-box .description {
+  background-color: #00661a;
+}
+.person-box .description:hover,
+.image-box .description:hover,
+.person-box .description.hover,
+.image-box .description.hover {
+  background-color: rgba(0, 102, 26, 0.8);
+}
+.person-box .inner-box,
+.image-box .inner-box {
+  background-color: #00661a;
+}
+.person-box .person-contacts-title,
+.image-box .person-contacts-title {
+  color: #b4e6d4;
+}
+.image-box:hover .description {
+  background-color: rgba(0, 102, 26, 0.8);
+}
+/* =============== */
+/* === SOCIALS === */
+ul.socials > li > a {
+  background-color: #00661a;
+}
+ul.socials > li > a:hover,
+ul.socials > li > a:focus,
+ul.socials > li > a:active {
+  background-color: #00b259;
+}
+/* ================= */
+/* === ACCORDION === */
+.panel-group.accordion > .panel > .panel-heading > a {
+  color: #00b259;
+}
+.panel-group.accordion-type2 > .panel > .panel-heading > a {
+  background-color: #00661a;
+  border: none;
+}
+.panel-group.accordion-type2 > .panel > .panel-heading > a.collapsed {
+  background-color: rgba(0, 178, 89, 0.5);
+}
+/* ============== */
+/* === TABLES === */
+.table thead {
+  background-color: #b4e6d4;
+}
+.table thead .title-important {
+  background-color: #00661a;
+}
+/* ================ */
+/* === CALENDAR === */
+.calendar .fc-toolbar {
+  color: #00661a;
+}
+.calendar .fc-toolbar .fc-left,
+.calendar .fc-toolbar .fc-center,
+.calendar .fc-toolbar .fc-right {
+  padding: 13px 25px;
+}
+.calendar .fc-toolbar .fc-header-title h2 {
+  color: #00661a;
+}
+.calendar .fc-toolbar .fc-button {
+  color: #00b259;
+}
+.calendar .fc-toolbar .fc-button.fc-button-today {
+  color: #00b259;
+}
+.calendar .fc-event .fc-content {
+  background-color: #00b259;
+}
+.calendar .fc-event .fc-content:hover {
+  background-color: #00661a;
+}
+/* ======================== */
+/* === POPOVER & TOOLTIP === */
+.popover .popover-title {
+  background-color: #00b259;
+}
+/* ============ */
+/* === TABS === */
+.nav-tabs {
+  background-color: #b4e6d4;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #00661a;
+  border-color: #00661a;
+}
+.nav-tabs > li {
+  margin-bottom: 0;
+}
+.nav-tabs > li > a {
+  border-right-color: #ffffff;
+  background-color: #b4e6d4;
+  color: #00661a;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  border-color: #00b259;
+  background-color: #00b259;
+}
+.tab-content > .active {
+  background-color: #00661a;
+}
+/* ================== */
+/* === FLEXSLIDER === */
+.flexslider a {
+  color: #00661a;
+}
+.flexslider a:hover,
+.flexslider a:focus,
+.flexslider a:active {
+  color: #ffffff;
+}
+.flexslider.std-slider .flex-direction-nav .flex-next:hover,
+.flexslider.std-slider .flex-direction-nav .flex-prev:hover {
+  color: #00661a;
+}
+/* ================== */
+/* === DATEPICKER === */
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+  background-color: #00661a;
+  border-color: #00661a;
+}
+/* ===================== */
+/* === IMAGE GALLERY === */
+.packeryItem .description {
+  background-color: rgba(0, 178, 89, 0.8);
+}
+.gallerymessage {
+  background-color: #00b259;
+}
+.navbar-default .navbar-toggle {
+  border-color: #00661a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #00661a;
+}

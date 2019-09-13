@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@font-face {
+	font-family: 'Conv_GE_SS_Two_Light';
+	src: url('../fonts/GE_SS_Two_Light.eot');
+	src: local('?'), url('../fonts/GE_SS_Two_Light.woff') format('woff'), url('../fonts/GE_SS_Two_Light.ttf') format('truetype'), url('../fonts/GE_SS_Two_Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: amay;
+	src: url('../fonts/Hacen_Saudi_Arabia.eot');
+	src: url('../fonts/Hacen_Saudi_Arabia.eot?#iefix') format('embedded-opentype'), url('../fonts/HacenSaudiArabia.woff') format('woff'), url('../fonts/Hacen Saudi Arabia.ttf') format('truetype'), url('../fonts/HacenSaudiArabia.svg#svgFontName') format('svg');
+}
+
+/* 
+ * Droid Arabic Kufi (Arabic) http://www.google.com/webfonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DroidKufi-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DroidKufi-Regular.woff') format('woff'),
+       url('../fonts/DroidKufi-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/DroidKufi-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DroidKufi-Bold.woff') format('woff'),
+       url('../fonts/DroidKufi-Bold.ttf') format('truetype');
+} 
+
+/**/
+
+body {
+	font-family: "amay", Arial, sans-serif !important;
+}
+
+/*
+@media (max-width: 1800px) {
+	.cloud1 {
+		left: inherit !important;
+		right: -200px!important;
+	}
+}
+
+.cloud1 {
+	left: inherit !important;
+	right: -5%!important;
+}
+
+.cloud2 {
+	right: inherit !important;
+	left: 5%!important;
+}
+
+.sun {
+	left: inherit !important;
+	right: -270px!important;
+}
+*/
+
+@media (min-width: 768px) {
+	.navbar-header {
+		float: right!important;
+	}
+}
+
+.navbar-toggle {
+	float: left!important;
+	margin-right: inherit !important;
+	margin-left: 15px!important;
+}
+
+@media (min-width: 768px) {
+	.navbar > .container .navbar-brand,
+	.navbar > .container-fluid .navbar-brand {
+		margin-left: inherit !important;
+		margin-right: -15px!important;
+	}
+}
+
+.navbar-brand {
+	float: right;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav.navbar-right:last-child {
+		margin-right: inherit !important;
+		margin-left: -15px!important;
+		/*added by sami*/
+		margin-top: 50px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-right {
+		float: left !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: right;
+	}
+}
+
+.nav {
+	padding-left: inherit !important;
+	padding-right: 0!important;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav > li {
+		float: right;
+	}
+}
+
+.navbar-nav > li > a {
+	font-family: "amay", Arial, sans-serif !important;
+}
+
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:before {
+	right: inherit !important;
+	left: -90px!important;
+}
+
+.navbar .dropdown-menu > li > a {
+	direction: rtl;
+	text-align: right;
+}
+
+.navbar li.dropdown > .dropdown-menu > li.dropdown-submenu:after {
+	content: "\f053";
+	right: inherit !important;
+	left: 10px!important;
+}
+
+.yamm .nav.navbar-right .yamm-fw .dropdown-menu h4 {
+	direction: rtl;
+	text-align: right;
+}
+
+.navbar-nav .dropdown > a:before {
+	left: inherit !important;
+	right: -15px!important;
+}
+
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu > .dropdown-menu {
+	left: inherit !important;
+	right: 100%!important;
+	margin-left: inherit !important;
+	margin-right: 40px!important;
+}
+
+/*becareful here */
+
+/*dropdown menu pointer*/
+
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu > .dropdown-menu:before {
+	left: inherit !important;
+	right: -4px!important;
+	border-style: solid;
+	border-width: 27.5px 30px 27.5px 0;
+	border-color: transparent transparent transparent #000000;
+	border-color: transparent transparent transparent rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu > li.dropdown-submenu > .dropdown-menu:after {
+	left: inherit !important;
+	right: -10px!important;
+	border-style: solid;
+	border-width: 25px 25px 25px 0;
+	border-color: transparent transparent transparent #ffffff;
+	border-color: transparent transparent transparent rgba(255, 255, 255, 0.9);
+}
+
+/*dropdown menu pointer End*/
+
+.nav-tabs > li {
+	float: right;
+}
+
+@media (min-width: 992px) {
+	.col-md-offset-2 {
+		margin-left: inherit !important;
+		margin-right: 16.66666667%!important;
+	}
+}
+
+@media (min-width: 992px) {
+	.col-md-1,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5,
+	.col-md-6,
+	.col-md-7,
+	.col-md-8,
+	.col-md-9,
+	.col-md-10,
+	.col-md-11,
+	.col-md-12 {
+		float: right;
+	}
+}
+
+.shadow-box.padding-small {
+	padding: 10px 50px 40px 20px;
+}
+
+.color-motive {
+	direction: rtl;
+	font-family: 'Droid Arabic Kufi'!important; 
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.color-motive-light,
+p {
+	direction: rtl;
+}
+
+.pull-right {
+	float: left!important;
+}
+
+.pull-left {
+	float: right!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: "amay", Arial, sans-serif !important;
+	direction: rtl;
+}
+
+ul.socials {
+	padding-left: inherit !important;
+	padding-right: 10px!important;
+}
+
+ul.socials > li {
+	margin-right: inherit !important;
+	margin-left: 8px!important;
+}
+
+.media > .pull-left {
+	margin-right: inherit !important;
+	margin-left: 10px!important;
+}
+
+.media,
+.media-body {
+	text-align: right;
+}
+
+.form-control {
+	direction: rtl;
+}
+
+.input-group-addon:last-child {
+	border-left: inherit !important;
+	border-right: 0!important;
+}
+
+.input-group-addon {
+	right: inherit !important;
+	left: 10px!important;
+}
+
+footer .contacts .contacts-map {
+	right: inherit !important;
+	left: 7px!important;
+}
+
+footer .contacts {
+	text-align: right;
+}
+
+.btn-primary.witharrow:before {
+	content: "\f053";
+	right: inherit !important;
+	left: 10px!important;
+}
+
+.btn-primary.witharrow {
+	padding-right: inherit !important;
+	padding-left: 35px !important;
+}
+
+/**/
+
+.sub-menu .nav-tabs > li:not(:first-child):after {
+	margin-left: inherit !important;
+	margin-right: -10.5px!important;
+}
+
+.program-title {
+	line-height: 1.3;
+}
+
+@media (max-width: 1199px) {
+	.navbar-default {
+		direction: rtl;
+	}
+}
+
+.copyright {
+	direction: rtl;
+}
+
+#fish1 {
+	left: inherit !important;
+	right: 5%!important;
+}
+
+#fish2 {
+	right: inherit !important;
+	left: 10% !important;
+}
+
+/*
+#island {
+	left: inherit !important;
+	right: 10%!important;
+}
+
+#rainbow {
+	left: inherit !important;
+	right: 7%!important;
+}
+
+@media (max-width: 1600px) {
+	#island {
+		left: inherit !important;
+		right: -70px!important;
+	}
+}
+
+@media (max-width: 1600px) {
+	#rainbow {
+		left: inherit !important;
+		right: -100px!important;
+	}
+}
+*/
+
+img.pull-left {
+	margin-right: inherit !important;
+	margin-left: 25px!important;
+}
+
+.tab-content > .active {
+	left: inherit !important;
+	right: 0!important;
+}
+
+.fc {
+	direction: rtl;
+	text-align: right;
+}
+
+.fc-toolbar .fc-left {
+	float: right;
+}
+
+.fc-toolbar .fc-right {
+	float: left;
+}
+
+.fc-icon-right-single-arrow:after {
+	content: "\02039";
+	left: inherit !important;
+	right: -3%!important;
+}
+
+.fc-icon-left-single-arrow:after {
+	content: "\0203A";
+	left: inherit !important;
+	right: 3%!important;
+}
+
+/*
+
+.cloud1 {
+  left: inherit !important;
+  right: -5%!important;
+}
+.cloud2 {
+  right: inherit !important;
+  left: 5%!important;
+}
+.cloud3 {
+  left: inherit !important;
+  right: -5%!important;
+}
+
+.cloud4 {
+  right: inherit !important;
+  left: 15%!important;
+}
+.cloud5 {
+  left: inherit !important;
+  right: 17%!important;
+}
+.cloud6 {
+  right: inherit !important;
+  left: 10%!important;
+}
+
+.bounceInLeft {
+    -webkit-animation-name: inherit !important;
+    -webkit-animation-name: bounceInRight!important;
+    animation-name: inherit !important;
+    animation-name: bounceInRight!important;
+}
+
+*/
+
+#boat {
+	left: inherit !important;
+	right: 35%!important;
+}
+
+.image-box .description {
+  text-align: right;
+}
+
+.table-cell img {width: 140px}
+
+.modal-content p {
+	  
+   font-family: 'Droid Arabic Kufi'; 
+   font-weight: normal; 
+   font-style: normal; 
+	font-size: 16px;
+	
+ 
+}
+
+.nav-tabs {
+    font-family: 'Droid Arabic Kufi'!important;
+}
+
+ul,ol {
+	font-family: 'Droid Arabic Kufi'!important;
+	font-size: 16px;
+} 
+
+.color-motive-p {
+    color: #ffcc00 !important;
+	font-weight: bold!important;
+	text-align: left!important;
+	padding-left: 10px!important;
+}

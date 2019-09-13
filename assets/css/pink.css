@@ -1,0 +1,447 @@
+/* =================== */
+/* === BODY STYLES === */
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa3d1+0,FFA3D1+100 */
+background: #ffa3d1; /* Old browsers */
+background: -moz-linear-gradient(top, #ffa3d1 0%, #FFA3D1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffa3d1 0%,#FFA3D1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffa3d1 0%,#FFA3D1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa3d1', endColorstr='#FFA3D1',GradientType=0 ); /* IE6-9 */
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body:before {
+  z-index: -1;
+  content: "";
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa3d1+0,FFA3D1+100 */
+background: #ffa3d1; /* Old browsers */
+background: -moz-linear-gradient(top, #ffa3d1 0%, #FFA3D1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffa3d1 0%,#FFA3D1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffa3d1 0%,#FFA3D1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa3d1', endColorstr='#FFA3D1',GradientType=0 ); /* IE6-9 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+a {
+  color: #c62877;
+}
+a:hover,
+a:focus {
+  color: #c62877;
+}
+.form-control:focus {
+  border-color: #c62877;
+}
+/* ===================== */
+/* === NAVBAR STYLES === */
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a,
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a:hover,
+.navbar-default.navbar-fixed-top .navbar-nav > .active > a:focus {
+  color: #c62877;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #c62877;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #c62877;
+  text-decoration: underline;
+}
+.navbar .dropdown-menu > li a {
+  color: #c62877;
+}
+.navbar .dropdown-menu > li a:hover,
+.navbar .dropdown-menu > li a:focus {
+  color: #FFA3D1;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar .dropdown-menu > li a:hover .program-title,
+.navbar .dropdown-menu > li a:focus .program-title {
+  color: #FFA3D1;
+}
+.yamm .nav.navbar-right .yamm-fw .dropdown-menu h4 {
+  color: #FFA3D1;
+}
+.navbar .dropdown-menu li.active a {
+  color: #FFA3D1;
+}
+.navbar li.dropdown > .dropdown-menu > li.dropdown-submenu:after {
+  color: #c62877;
+}
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:hover:after,
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:active:after,
+.navbar li.dropdown:hover > .dropdown-menu > li.dropdown-submenu:focus:after {
+  color: #FFA3D1;
+}
+/* ================== */
+/* === TYPOGRAPHY === */
+.color-motive {
+  color: #c62877;
+}
+.color-motive-light {
+  color: #FFA3D1;
+}
+blockquote p:before,
+blockquote p:after {
+  color: #FFA3D1;
+}
+/* =================== */
+/* === BREADCRUMBS === */
+.breadcrumb {
+  padding: 0px;
+  background-color: transparent;
+}
+.breadcrumb a:hover {
+  color: #c62877;
+}
+.breadcrumb > .active {
+  color: #FFA3D1;
+}
+/* =============== */
+/* === BUTTONS === */
+.btn-primary {
+  background-color: #FFA3D1;
+  border-color: #FFA3D1;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #c62877;
+  border-color: #c62877;
+}
+footer .contactForm .btn-primary {
+  background-color: #c62877;
+  border-color: #c62877;
+}
+footer .contactForm .btn-primary:hover {
+  background-color: #FFA3D1;
+  border-color: #FFA3D1;
+}
+/* ============= */
+/* === LISTS === */
+ol li:before {
+  color: #FFA3D1;
+}
+ul.circle li:before {
+  background-color: #FFA3D1;
+}
+/* ================== */
+/* === PAGINATION === */
+.pagination li:first-child a,
+.pagination li:last-child a,
+.pagination li:first-child a:hover,
+.pagination li:last-child a:hover {
+  color: #c62877;
+}
+.pagination > li > a,
+.pagination > li > span {
+  background-color: #FFA3D1;
+  border-color: #FFA3D1;
+  color: #c62877;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #FFA3D1;
+  border-color: #FFA3D1;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: #c62877;
+  border-color: #c62877;
+  color: #ffffff;
+}
+/* ====================== */
+/* === GENERAL STYLES === */
+.programs .program-title {
+  color: #c62877;
+}
+.sub-menu .title {
+  color: #FFA3D1;
+}
+.blog-tags > li,
+.blog-categories > li {
+  background-color: #FFA3D1;
+}
+.shadow-box.daycare-widget ul li a:hover,
+.shadow-box.daycare-widget ul li a:focus {
+  color: #FFA3D1;
+}
+.shadow-box.daycare-widget ul li.active a {
+  color: #FFA3D1;
+}
+.shadow-box.daycare-widget.widget-archives ul li a {
+  color: #c62877;
+  text-decoration: underline;
+}
+.list-counter .timestamp {
+  color: #FFA3D1;
+}
+.list-counter .list-quantity {
+  background-color: #FFA3D1;
+}
+.scrollUp,
+.scrollDown {
+  color: #c62877;
+}
+.blog-author {
+  background-color: #FFA3D1;
+}
+.commentList .btn-primary {
+  background-color: #FFA3D1;
+  border-color: #FFA3D1;
+  color: #000000;
+}
+.commentList .btn-primary:hover {
+  background-color: #c62877;
+  border-color: #c62877;
+  color: #ffffff;
+}
+.commentList a {
+  color: #FFA3D1;
+}
+article .article-info .date {
+  background-color: #FFA3D1;
+}
+article .article-info .date:before {
+  border-color: transparent transparent transparent #FFA3D1;
+}
+.quote {
+  background-color: #FFA3D1;
+}
+footer.type1 a:hover {
+  color: #c62877;
+}
+footer.type2,
+footer.type3 {
+  color: #c62877;
+}
+footer.type2 a,
+footer.type3 a {
+  color: #c62877;
+}
+.line-right {
+  border-right: 1px solid rgba(0, 102, 153, 0.3);
+}
+/* =================== */
+/* === IMAGE BLOCK === */
+.info-block {
+  background-color: #FFA3D1;
+}
+/* =============== */
+/* === TWITTER === */
+.tweets_display ul.tweet_list li a {
+  color: #FFA3D1;
+}
+/* ======================== */
+/* === IMAGE/PERSON BOX === */
+.person-box .description,
+.image-box .description {
+  background-color: #FFA3D1;
+}
+.person-box .description:hover,
+.image-box .description:hover,
+.person-box .description.hover,
+.image-box .description.hover {
+  background-color: rgba(0, 163, 217, 0.8);
+}
+.person-box .inner-box,
+.image-box .inner-box {
+  background-color: #c62877;
+}
+.image-box:hover .description {
+  background-color: rgba(0, 163, 217, 0.8);
+}
+/* =============== */
+/* === SOCIALS === */
+ul.socials > li > a {
+  background-color: #FFA3D1;
+}
+ul.socials > li > a:hover,
+ul.socials > li > a:focus,
+ul.socials > li > a:active {
+  background-color: #c62877;
+}
+/* ================= */
+/* === ACCORDION === */
+.panel-group.accordion > .panel > .panel-heading > a {
+  color: #FFA3D1;
+}
+.panel-group.accordion-type2 > .panel > .panel-heading > a {
+  background-color: #FFA3D1;
+  border: none;
+}
+.panel-group.accordion-type2 > .panel > .panel-heading > a.collapsed {
+  background-color: rgba(0, 163, 217, 0.5);
+}
+/* ============== */
+/* === TABLES === */
+.table thead {
+  background-color: #FFA3D1;
+}
+.table thead .title-important {
+  background-color: #FFA3D1;
+}
+/* ================ */
+/* === CALENDAR === */
+.calendar .fc-toolbar {
+  color: #c62877;
+}
+.calendar .fc-toolbar .fc-left,
+.calendar .fc-toolbar .fc-center,
+.calendar .fc-toolbar .fc-right {
+  padding: 13px 25px;
+}
+.calendar .fc-toolbar .fc-header-title h2 {
+  color: #c62877;
+}
+.calendar .fc-toolbar .fc-button {
+  color: #FFA3D1;
+}
+.calendar .fc-toolbar .fc-button.fc-button-today {
+  color: #FFA3D1;
+}
+.calendar .fc-event .fc-content {
+  background-color: #FFA3D1;
+}
+.calendar .fc-event .fc-content:hover {
+  background-color: #c62877;
+}
+/* ======================== */
+/* === POPOVER & TOOLTIP === */
+.popover .popover-title {
+  background-color: #FFA3D1;
+}
+/* ============ */
+/* === TABS === */
+.nav-tabs {
+  background-color: #FFA3D1;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #c74084;
+  border-color: #c74084;
+}
+.nav-tabs > li {
+  margin-bottom: 0;
+}
+.nav-tabs > li > a {
+  border-right-color: #ffffff;
+  background-color: #FFA3D1;
+  color: #c74084;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  border-color: #c62877;
+  background-color: #c62877;
+}
+.tab-content > .active {
+  background-color: #c74084;
+}
+/* ================== */
+/* === FLEXSLIDER === */
+.flexslider a {
+  color: #c62877;
+}
+.flexslider a:hover,
+.flexslider a:focus,
+.flexslider a:active {
+  color: #ffffff;
+}
+.flexslider.std-slider .flex-direction-nav .flex-next:hover,
+.flexslider.std-slider .flex-direction-nav .flex-prev:hover {
+  color: #c62877;
+}
+/* ================== */
+/* === DATEPICKER === */
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+  background-color: #c62877;
+  border-color: #c62877;
+}
+/* ===================== */
+/* === IMAGE GALLERY === */
+.packeryItem .description {
+  background-color: rgba(0, 163, 217, 0.8);
+}
+.gallerymessage {
+  background-color: #FFA3D1;
+}
+.navbar-default .navbar-toggle {
+  border-color: #c62877;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #c62877;
+}
+footer .contacts {
+  background-color: #c62877;
+}
+footer .contacts a:hover,
+footer .contacts a:focus,
+footer .contacts a:active {
+  color: #FFA3D1 !important;
+}
+
+/**/
+.modal-content {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa3d1+0,ffffff+100 */
+background: #ffa3d1; /* Old browsers */
+background: -moz-linear-gradient(top, #ffa3d1 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffa3d1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffa3d1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa3d1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.modal-header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa3d1+0,ffffff+100 */
+background: #ffa3d1; /* Old browsers */
+background: -moz-linear-gradient(top, #ffa3d1 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffa3d1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffa3d1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa3d1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.modal-footer {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa3d1+0,ffffff+100 */
+background: #ffa3d1; /* Old browsers */
+background: -moz-linear-gradient(top, #ffa3d1 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffa3d1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffa3d1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa3d1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+footer.type1 {
+    background-color: #c62877;
+}
